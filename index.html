@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>ক্রাশের নাম দাও</title>
+</head>
+<body>
+  <h2>তোমার ক্রাশের নাম লিখো:</h2>
+  <input type="text" id="crusherName" placeholder="এখানে নাম লেখো">
+  <button onclick="submitName()">সাবমিট করো</button>
+
+  <script>
+    function submitName() {
+      const name = document.getElementById("crusherName").value.trim();
+      if (name === "") {
+        alert("অনুগ্রহ করে নাম লিখো!");
+      } else {
+        alert("ধন্যবাদ! " + name + " পাঠানো হয়েছে।");
+      }
+    }
+  </script>
+</body>
+</html>
